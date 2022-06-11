@@ -1,5 +1,5 @@
 #include <iostream>
-#include "KOL_ZES1_ZAD1_BIB.h"
+#include "KOL_Z1_Z1_bib.h"
 using namespace std;
 int main()
 {
