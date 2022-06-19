@@ -79,8 +79,8 @@ int main ()
              do
              {
                 getline(z_pliku, linia);
-                cout<<linia<<endl;
                 bool check_nip_ok = check_nip(linia);
+                cout<<"[INFO] - DANE: "<<linia<<endl;
                 if(check_nip_ok == true)
                 {
                   cout<<"[INFO] - DLUGOSC NIPU POPRAWNA"<<endl;
@@ -108,9 +108,7 @@ int main ()
                       for(int i= 0; i<3; i++)
                       {
                          R = R + ((linia[i]-'0')*pow(10, 2-i));
-                         cout<<"R: "<<R<<endl;
                       }
-                      cout<<"exportuje IRS: "<< R <<endl;
                       jeden.create(set_nip, R,  nazwa);
 
                        
@@ -143,6 +141,7 @@ int main ()
         }
         case 3: 
         {
+            cout<<"[INFO] - ZAPISUJE"<<endl;
             Node * return_next = jeden.head;
             long long int return_nip = 0;
             string return_name;    
@@ -170,6 +169,7 @@ int main ()
                 do_pliku.close();
               }
             }
+            cout<<"[INFO] - ZAPIS UDANY"<<endl; 
              
         }
         }  
