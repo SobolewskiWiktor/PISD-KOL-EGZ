@@ -9,7 +9,7 @@ bool check_nip(string linia)
 {
     for(int i=0; i<10; i++)
     {
-        if(linia[i]-'0' != 0 && linia[i]-'0' != 1 && linia[i]-'0' != 2 && linia[i]-'0' != 3 && linia[i]-'0' != 4 && linia[i]-'0' != 5 && linia[i]-'0' != 6 && linia[i]-'0' != 7 && linia[i]-'0' != 8 && linia[i]-'0' != 9)
+        if(linia[i]-'0' >= 0 && linia[i]-'0' <= 9)
         {
             return 0;
         } 
